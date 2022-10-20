@@ -1,0 +1,105 @@
+<%- include('./partials/header'); %>
+
+<div class="dashboard">
+    <div class="icon">
+        <i class='bx bxl-xing'></i>
+        <a href=" ">View Site<i class='bx bx-chevron-down'></i> </a>
+        </div>
+        <div class="dash">
+            <div class="home">
+                <div class="hp">
+                    <h2>Dashboard</h2>
+                <p>Home / Product</p>
+                </div>
+                <div class="hp-2">
+                    <a id="Admin" href=""><i class="fa-solid fa-user"></i> Admin</a>
+                </div>
+               
+            </div>    
+           
+        </div>
+        <div class="all">
+            <h2>Delete Product</h2>
+        <div class="select-box-wrap">
+            <select class="form-select" aria-label="Default select example">
+                    <option selected>Bulk option</option>
+                    <option value="1">Delete</option>
+            </select>
+            <button type="button" class="btn btn-primary">Apply</button>
+    </div>
+    <div class="datatable">
+            <label class="class-label">
+                <div class="select-user">
+                    <span>show</span>      
+                    <select name="all_user_table_length" class="custom-select custom-select-sm form-control form-control-sm" aria-label="all_user_table">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                    </select>
+                  <span> enteries </span>
+                </div>
+                <div class="search-box">
+                    <span style="padding: 10px;">Search</span>
+                    <input type="text" >
+                </div>
+                
+            </label> 
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table id="example" class="display" style="width:100%">
+                <thead style="background-color: rgb(114, 114, 220);">
+                        <tr>
+                                <td style="padding: 10px;" ><input type="checkbox" ; "></td>
+                                <td style="margin-left: 15px;">Order id</td>
+                                <td style="margin-left: 15px;">Billing Name</td>
+                                <td style="margin-left: 15px;" >Billing Email</td>
+                                <td style="margin-left: 15px;">Total Amount</td>
+                                <td style="margin-left: 15px;">Package Gateway</td>
+                                <td style="margin-left: 15px;">Payment Status</td>
+                                <td style="margin-left: 15px;">status</td>
+                                <td style="margin-left: 15px;">Date</td>
+                                <td style="margin-left: 15px;">Action</td>
+                        </tr>
+                </thead >
+                    <tbody>
+                        
+                            <tr>
+                                <td style="margin-left: 10px;" ><input type="checkbox" style="margin-left: 5px;"></td>
+                                        <td style="padding:15px;">510</td>
+                                        <td>
+                                            <h6 style="margin-top: 10px;" >Rajat Soni</h6>
+                                        </td>
+                                        <td>rajatsoni.soni77@gmail.com</td>
+                                        <td>380</td>
+                                        
+                                        <td>
+                                            <h5>Razorpay</h5>
+                                        </td>
+                                        <td>
+                                            <span class="alert alert-warning">Pending</span>
+                                        </td>
+                                        <td>
+                                            <span class="alert alert-warning">Pending</span>
+                                        </td>
+                                        <td><h8>20-9-22</h8> </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger"><i class='bx bx-message-square-x'></i></button>
+                                            <button type="button" class="btn btn-primary"><i class='bx bxs-edit-alt'></i>Update Status</button>
+                                            <button type="button" class="btn btn-secondary"><i class='bx bx-chat'></i></button>
+                                            <button type="button" class="btn btn-info"><i class='bx bx-low-vision'></i></button>
+                                        </td>
+                                    </tr>
+                                    
+
+
+                                
+                    </tbody>
+
+            </table>
+        </div>
+    </div>
+    </div>
+
+<%- include('./partials/footer'); %>

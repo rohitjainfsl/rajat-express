@@ -1,0 +1,105 @@
+<%- include('./partials/header'); %>
+<div class="dashboard">
+    <div class="icon">
+        <i class='bx bxl-xing'></i>
+        <a href=" ">View Site<i class='bx bx-chevron-down'></i> </a>
+        </div>
+        <div class="dash">
+            <div class="home">
+                <div class="hp">
+                    <h2>Dashboard</h2>
+                <p>Home / Product</p>
+                </div>
+                <div class="hp-2">
+                    <a id="Admin" href=""><i class="fa-solid fa-user"></i> Admin</a>
+                </div> 
+            </div>      
+        </div>
+        <div class="all">
+            <h2>All Product</h2>
+        <div class="select-box-wrap">
+            <select class="form-select" aria-label="Default select example">
+                    <option selected>Bulk option</option>
+                    <option value="1">Delete</option>
+            </select>
+            <button type="button" class="btn btn-primary">Apply</button>
+    </div>
+    <div class="datatable">
+            <label class="class-label">
+                <div class="select-user">
+                    <span>show</span>      
+                    <select name="all_user_table_length" class="custom-select custom-select-sm form-control form-control-sm" aria-label="all_user_table">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                    </select>
+                  <span> enteries </span>
+                </div>
+                <div class="search-box">
+                    <span style="padding: 10px;">Search</span>
+                    <input type="text" >
+                </div>
+                
+            </label> 
+
+    </div>
+    <div class="row">
+        <dov class="col-12">
+            <table id="example" class="display" style="width:100%">
+                <thead style="background-color: rgb(114, 114, 220);">
+                        <tr>
+                                <td><input type="checkbox" style="margin-left: 15px; "></t>
+                                <td style="padding:15px;">id</td>
+                                <td>Title</td>
+                                <td>Terms</td>
+                                <td>Action</td>
+                        </tr>
+                </thead >
+                    <tbody>
+                        <tr>
+                        <td><input type="checkbox" style="margin-left: 15px; "></td>
+                                <td style="padding:15px;">2</td>
+                                <td>
+                                    <h6 style="margin-top: 10px;" > Size</h6>
+                                </td>
+                                <td>
+                                    <p>s</p>
+                                    <p>m</p>
+                                    <p>L</p>
+                                    <p>XL</p>
+                                    <p>XXl</p>
+                                    <p>3XL</p>
+                                </td>
+                                
+                                <td>
+                                    <button type="button" class="btn btn-danger"><i class='bx bx-message-square-x'></i></button>
+                                    <button type="button" class="btn btn-primary"><i class='bx bxs-edit-alt'></i></button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><input type="checkbox" style="margin-left: 15px; "></td>
+                                        <td style="padding:15px;">71</td>
+                                        <td>
+                                            <h6 style="margin-top: 10px;" >Colour</h6>
+                                            
+                                        <td>
+                                            <p>Red</p>
+                                            <p>Yellow</p>
+                                            <p>Green</p>
+                                            <p>Black</p>
+                                            <p>Blue</p>
+                                        </td>
+                                        
+                                        <td>
+                                            <button type="button" class="btn btn-danger"><i class='bx bx-message-square-x'></i></button>
+                                            <button type="button" class="btn btn-primary"><i class='bx bxs-edit-alt'></i></button>
+                                        </td>
+                                    </tr>                           
+                    </tbody>
+            </table>
+        </dov>
+    </div>
+</div>
+<%- include('./partials/footer'); %>
